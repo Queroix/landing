@@ -2,7 +2,7 @@
   "name": "landings",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Queroix.github.io/landing-imoveis",
+  "homepage": "https://queroix.github.io/landing",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
