@@ -22,7 +22,11 @@ export default function HeroSection() {
       className={`w-full py-32 text-center transition-opacity duration-1000 relative bg-cover bg-center bg-no-repeat text-white ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
-      style={{ backgroundImage: "url(/images/cidade.png)" }}
+      style={{
+        backgroundImage: `url(${
+          process.env.NODE_ENV === "production" ? "/landing" : ""
+        }/images/cidade.png)`,
+      }}
     >
       <h1 className="text-5xl font-extrabold drop-shadow-md mb-4">
         Venda seu imóvel com quem entende
